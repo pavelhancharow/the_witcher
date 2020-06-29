@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Witcher</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -40,9 +41,8 @@
     <div class="container">
       <div class="main-content">
         <div class="content">
-          <span class="genre">2019, фэнтези</span>
-
-          <div class="rating">
+          <span class="genre animate__animated animate__fadeInRight">2019, фэнтези</span>
+          <div class="rating animate__animated animate__fadeInRight">
             <div class="rating-stars">
               <img src="img/star.svg" alt="star" class="star">
               <img src="img/star.svg" alt="star" class="star">
@@ -58,14 +58,18 @@
             <div class="rating-number">7/10</div>
           </div>
           <!-- /.rating -->
-          <h1 class="main-title">Ведьмак</h1>
-          <p class="main-description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва
+          <h1 class="main-title animate__animated animate__fadeInRight">Ведьмак</h1>
+          <p class="main-description animate__animated animate__fadeInRight">Ведьмак Геральт, мутант и убийца чудовищ,
+            на своей верной лошади по кличке Плотва
             путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной
             нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс.</p>
-          <button class="button">Смотреть онлайн</button>
+          <a data-fancybox href="https://youtu.be/5uMDRKx8gTM"
+            class="button animate__animated animate__fadeInRight">Смотреть
+            трейлер</a>
         </div>
         <!-- /.content -->
-        <button class="play"><img src="img/play.svg" alt="play" class="play-img"></button>
+        <a data-fancybox href="https://www.youtube.com/watch?v=5uMDRKx8gTM" class="play"><img src="img/play.svg"
+            alt="play" class="play-img"></a>
         <!-- /.play -->
       </div>
       <!-- /.main-content -->
@@ -154,6 +158,9 @@
     </div>
     <!-- /.container -->
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>

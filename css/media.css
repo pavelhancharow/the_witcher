@@ -29,6 +29,7 @@
     background-color: #fff;
     cursor: pointer;
     transition: height 0.1s;
+    z-index: 99;
   }
 
   .menu-button::before {
@@ -81,10 +82,12 @@
     flex-direction: column;
     margin: auto;
     padding-bottom: 40px;
+    z-index: 99;
   }
 
   .header-active {
     display: flex;
+    animation: fadeInDown 1s ease;
   }
 
   .logo {
@@ -111,6 +114,10 @@
   .menu-link {
     margin-right: 0;
     margin-bottom: 17px;
+  }
+
+  .menu-link:hover {
+    color: #141218;
   }
 
   .swiper-container {

@@ -54,7 +54,16 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #fff;
+  transition: color 0.5s ease-out;
 }
+
+.menu-link:hover {
+  color: rgb(157, 41, 41);
+}
+
+/* img {
+  fill: currentColor;
+} */
 
 .social-link {
   margin-left: 20px;
@@ -67,12 +76,14 @@ body {
 .genre {
   display: block;
   margin-bottom: 16px;
+  animation-delay: 0.1s;
 }
 
 .rating {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  animation-delay: 0.3s;
 }
 
 .rating-stars {
@@ -101,27 +112,36 @@ body {
   font-size: 76px;
   line-height: 89px;
   margin-bottom: 10px;
+  animation-delay: 0.5s;
 }
 
 .main-description {
   max-width: 458px;
   line-height: 21px;
   margin-bottom: 40px;
+  animation-delay: 0.7s;
 }
 
 .button {
+  display: inline-block;
   padding: 22px 72px;
-  color: #fff;
+  color: #ffffff;
   background: #9d2929;
   border-radius: 8px;
   outline: none;
   border: none;
-  width: 100%;
-  max-width: 260px;
-  min-height: 60px;
+  /* width: 100%; */
+  /* max-width: 260px; */
+  /* min-height: 60px; */
+  animation-delay: 1s;
+}
+
+.button:active {
+  color: #ffffff;
 }
 
 .play {
+  display: flex;
   margin: auto;
   width: 100px;
   height: 100px;
@@ -129,6 +149,8 @@ body {
   background: #9d2929;
   border: none;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .play-img {
@@ -146,6 +168,7 @@ body {
   border-radius: 50%;
   left: -16px;
   top: -16px;
+  animation: pulse 1s ease-in-out 2s infinite;
 }
 
 .series {
@@ -279,10 +302,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  color: #3a383d;
+  color: rgb(255, 255, 255, 0.4);
 }
 
 .link-copyright {
   margin-left: 25px;
-  color: #3a383d;
+  color: rgb(255, 255, 255, 0.4);
+  transition: color 0.5s ease-out;
+}
+
+.link-copyright:hover {
+  color: rgb(255, 255, 255);
 }
